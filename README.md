@@ -5,12 +5,7 @@
 This project is a versatile AI-powered tool designed to generate and refine content for various platforms, including Instagram, TikTok, and more. It is highly customizable, allowing users to tailor the content to different target audiences, tones, and languages. The tool leverages advanced Large Language Models (LLMs) to create engaging and dynamic content based on product information scraped from e-commerce websites.
 
 # Folder Structure
-# Project Name
 
-## Overview
-This project consists of a backend and frontend system designed for content generation, image description, and web scraping using Large Language Models (LLMs). The application is containerized using Docker and managed with Docker Compose.
-
-## Project Structure
 ```
 project-root/
 │
