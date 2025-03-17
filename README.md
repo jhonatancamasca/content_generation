@@ -5,33 +5,38 @@
 This project is a versatile AI-powered tool designed to generate and refine content for various platforms, including Instagram, TikTok, and more. It is highly customizable, allowing users to tailor the content to different target audiences, tones, and languages. The tool leverages advanced Large Language Models (LLMs) to create engaging and dynamic content based on product information scraped from e-commerce websites.
 
 # Folder Structure
+# Project Name
+
+## Overview
+This project consists of a backend and frontend system designed for content generation, image description, and web scraping using Large Language Models (LLMs). The application is containerized using Docker and managed with Docker Compose.
+
+## Project Structure
+```
 project-root/
 │
 ├── backend/
-│   ├── Dockerfile
-│   ├── models/
-│   │   └── (Pydantic model files)
-│   ├── prompts/
-│   │   └── (Prompt template files)
-│   ├── src/
-│   │   ├── content_generator.py
-│   │   ├── image_describer.py
-│   │   ├── llm.py
-│   │   ├── scraping.py
-│   │   └── server.py
-│   └── requirements.txt
+│   ├── Dockerfile               # Docker configuration for the backend
+│   ├── models/                  # Pydantic model files
+│   ├── prompts/                 # Prompt template files
+│   ├── src/                     # Backend source code
+│   │   ├── content_generator.py  # Content generation logic
+│   │   ├── image_describer.py    # Image description handling
+│   │   ├── llm.py                # LLM interaction module
+│   │   ├── scraping.py           # Web scraping functionality
+│   │   └── server.py             # FastAPI server
+│   └── requirements.txt          # Python dependencies for the backend
 │
 ├── frontend/
-│   ├── Dockerfile
-│   ├── models/
-│   │   └── (Pydantic model files)
-│   ├── src/
-│   │   ├── generate_content.py
-│   │   └── ui.py
-│   └── requirements.txt
+│   ├── Dockerfile               # Docker configuration for the frontend
+│   ├── models/                  # Pydantic model files
+│   ├── src/                     # Frontend source code
+│   │   ├── generate_content.py   # Content generation logic for UI
+│   │   └── ui.py                 # User interface logic
+│   └── requirements.txt          # Python dependencies for the frontend
 │
-├── README.md
-└── docker-compose.yml
+├── README.md                    # Project documentation
+└── docker-compose.yml            # Docker Compose configuration
+```
 
 ## Features
 
