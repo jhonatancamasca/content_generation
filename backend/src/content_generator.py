@@ -65,6 +65,7 @@ class ContentGenerator:
         )
 
     def apply_tone(self, script, new_target_audience, new_tone, language):
+        
         parser_tone = self.create_tone_parser()
         generation_chain = self.create_script_chain(
             template=GENERATE_REFINED_INFO,
@@ -80,9 +81,7 @@ class ContentGenerator:
         return generation_chain.invoke(
             {
                 "previous_script": script,
-                "new_target_audience": new_target_audience,
-                "new_tone": new_tone,
-                "language": language,
+                "new_target_audience": new_target_audience
             }
         )
 
