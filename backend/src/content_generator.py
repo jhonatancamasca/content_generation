@@ -83,6 +83,7 @@ class ContentGenerator:
                 "new_target_audience": new_target_audience,
                 "new_tone": new_tone,
                 "language": language,
+                "format_instructions": parser_tone.get_format_instructions(),
             }
         )
 
